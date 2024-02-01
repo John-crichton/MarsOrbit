@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: #f0f0f0; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:xx-small;
+    background-image:url(./space.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.container {
+    position: relative;
+    width: 85vh; /* Średnica orbity (1/2 wysokości ekranu) */
+    height: 85vh; /* Średnica orbity (1/2 wysokości ekranu) */
+    border: 1px dashed lightblue;  /*Dodaj obramowanie orbity */
+    border-radius: 50%;
+
+}
+
+
+.circle {
+    width: 50px;
+    height: 50px;
+    /* background-color: blue; */
+    border-radius: 50%;
+    position: absolute;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    animation: rotateCircle 150s linear infinite;
+    /* border: 1px solid red; Dodaj obramowanie koła  */
+}
+
+.circle2 {
+    width: 60px;
+    height: 60px;
+    background-color: grey;
+    border-radius: 50%;
+    position: absolute;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    animation: rotateCircle2 190s linear infinite;
+    border: 1px solid grey; 
+    /* Dodaj obramowanie koła  */
+}
+
+@keyframes rotateCircle {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(25vh) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(25vh) rotate(-360deg);
+    }
+}
+
+@keyframes rotateCircle2 {
+    0% {
+        transform: translate(-50%, -50%) rotate(-60deg) translateX(450px) rotate(300deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(300deg) translateX(450px) rotate(-60deg);
+    }
+}
+
+#orbitaStacji {
+    width: 50vh;
+    height: 50vh;
+    border: 1px dashed white; 
+    /* Dodaj obramowanie orbity */
+    border-radius: 50%;
+    top: calc(50% - 25vh - 1px);
+    left: calc(50% - 25vh - 1px);
+
+}
+
+.station {
+    position:absolute;
+}
+
+.opis {
+    position:absolute;
+    }
+
+.MARS {
+    position:absolute;
+
+}
+

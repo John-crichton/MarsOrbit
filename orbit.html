@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="orbit.css">
+    <!-- <script src="script.js" defer></script> -->
+    <title>Poruszające się koło</title>
+</head>
+<body>
+    <div class="MARS">
+        <svg width="120" height="120">
+            <defs>
+                <pattern id="jpgFill" patternUnits="userSpaceOnUse" width="130" height="130">
+                  <image xlink:href="./minimars.png" x="0" y="0" width="110" height="110" />
+                </pattern>
+              </defs>
+            <circle cx="75" cy="75" r="80" fill="url(#jpgFill)" stroke="black"/>   
+        </svg>
+        
+    </div>
+    <div class="containerLunar">
+        
+        <div class="container">
+            <div class="container" id="orbitaStacji"></div>
+            <div class="circle2">
+                <svg width="80" height="80">
+                    <defs>
+                        <pattern id="jpgFill2" patternUnits="userSpaceOnUse" width="80" height="80">
+                          <image xlink:href="./Demios.jpg" x="0" y="0" width="80" height="80" />
+                        </pattern>
+                      </defs>
+                    <circle cx="35" cy="35" r="40" fill="url(#jpgFill2)" stroke="black"/>   
+                </svg>
+
+            </div>
+                
+                <div class="circle">
+                    <div class="opis">___OS-1</div>
+           
+                        <div class="station">
+                            <svg width="50" height="50" viewBox="0 0 50 50">
+                            <!-- Ciało stacji kosmicznej -->
+                            <rect x="15" y="15" width="20" height="20" fill="#B2B2B2" />
+                            <rect x="0" y="20" width="10" height="10" fill="#B2B2B2" />
+                            <rect x="40" y="20" width="10" height="10" fill="#B2B2B2" />
+                            <!-- Przyciski i detale -->
+                            <circle cx="25" cy="25" r="2" fill="#A9CCE3" />
+                            <circle cx="25" cy="27" r="2" fill="#A9CCE3" />
+                            <circle cx="25" cy="30" r="2" fill="#A9CCE3" />
+                            
+                            <!-- Anteny -->
+                            <line x1="25" y1="10" x2="25" y2="15" stroke="black" stroke-width="1" />
+                            <line x1="20" y1="10" x2="20" y2="15" stroke="black" stroke-width="1" />
+                            <line x1="30" y1="10" x2="30" y2="15" stroke="black" stroke-width="1" />
+                            </svg>
+                        </div>  
+                </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!-- osobny kontener dla księżyca - księżycowy  i ma się kręcić wokół dużego kontenera - jeżeli to się da 
+zrobić to dalej można próbować z  -->
